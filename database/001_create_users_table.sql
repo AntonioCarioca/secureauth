@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS secureauth CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE secureauth;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(160) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  role ENUM('admin','user') DEFAULT 'user',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
