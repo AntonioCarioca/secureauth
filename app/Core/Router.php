@@ -27,7 +27,7 @@ class Router
      * @param string $uri A URL solicitada pelo cliente.
      * @return mixed O retorno do método do Controller executado.
      */
-	public function dispatch(string $method, string $uri): mixed
+	public function dispatch(string $method, string $uri)
 	{
 		// Extrai apenas o caminho da URL (ignora query strings como ?id=1)
 		$uri = parse_url($uri, PHP_URL_PATH);
