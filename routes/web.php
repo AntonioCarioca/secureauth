@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\AuthController;
+use App\Controllers\DashboardController;
 
 return [
 	['GET', '/', [AuthController::class, 'index']],
@@ -10,6 +11,6 @@ return [
 	['POST', '/register', [AuthController::class, 'register']],
 	['POST', '/logout', [AuthController::class, 'logout']],
 
-	['GET', '/logout', [Dashboard::class, 'index']],
+	['GET', '/dashboard', [DashboardController::class, 'index']],
 
 ];
