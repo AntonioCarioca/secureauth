@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Dashboard</h1>
+	<p>Bem-vindo, <?= htmlspecialchars($user['name']) ?></p>
+	<a href="/logout">Sair</a>
+</body>
+</html>
