@@ -1,43 +1,56 @@
-## [1.0.0] - 2026-04-29
+## [2.0.0] - 2026-04-30
 
 
 
 ### Added
 
 
-- Adicionar função de conexão ao banco de dados
+- Adicionar caregamento e processamento de arquivos .env
 
-- Adição da função para gerenciamento de dados
+- Add funcionalidade de gerenciamento e exibição das views
 
-- Adicionar logica de rotas
+- Add funcionalidade roteamento
 
-- Implementar AuthController para gerenciar autenticação de usuários e update na logica de rotas
+- Add camando de segurança como Middlewares(Auth, Guest)
+
+- Add tela incial, login e register
+
+- Add tela de Dashboard
+
+- Add Controlador de Dashboard
 
 
 
-### Chores
+### Changed
 
 
-- Add automatico release workflow
+- Refatorar classe Database para usar superglobal $_ENV
 
-- Add automatico changelog workflow
+- Index passa a ser apenas Entrypoint (FrontController)
+
+- Add metodo findById na classe User
+
+- Atualização na classe AuthController adição dos metodos index, showLogin e showRegister e mudanças nos metodos ja existentes
 
 
 
 ### Documentation
 
 
-- Criação dos arquivos do projeto
+- Update changelog for v1.0.0
 
-- Atualização composer.json
+- Trocar armazenamento credenciais banco de dados para arquivo .env
 
-- Atualização do arquivo de configuração do banco de dados
+- Add variavel DB_CONNECTION no arquivo .env.example
 
-- Update scheme(create_user) database
 
-- Upade .gitignore
 
-- Adicionar comentários aos arquivos
+### Fixed
+
+
+- Method da uri /logout da classe AuthController
+
+- Retorno do metodo dispatch da classe Router
 
 
 
